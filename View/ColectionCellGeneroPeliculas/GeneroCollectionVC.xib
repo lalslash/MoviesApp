@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="GeneroCollectionVC" customModule="peliculasAPI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="191" height="53"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="191" height="53"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KNm-KH-V7x">
+                        <rect key="frame" x="0.0" y="0.0" width="191" height="53"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aa3-O4-cSh">
+                                <rect key="frame" x="6" y="0.0" width="179" height="53"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MyJ-j3-C85">
+                                        <rect key="frame" x="0.0" y="0.0" width="179" height="53"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.1176470588" green="0.1215686275" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="MyJ-j3-C85" firstAttribute="top" secondItem="aa3-O4-cSh" secondAttribute="top" id="6hl-58-1wh"/>
+                                    <constraint firstAttribute="bottom" secondItem="MyJ-j3-C85" secondAttribute="bottom" id="FEI-bE-raG"/>
+                                    <constraint firstItem="MyJ-j3-C85" firstAttribute="leading" secondItem="aa3-O4-cSh" secondAttribute="leading" id="PDh-iu-6rm"/>
+                                    <constraint firstAttribute="trailing" secondItem="MyJ-j3-C85" secondAttribute="trailing" id="aiG-GY-RHU"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.1176470588" green="0.1215686275" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="aa3-O4-cSh" secondAttribute="trailing" constant="6" id="2XO-JH-ctd"/>
+                            <constraint firstAttribute="bottom" secondItem="aa3-O4-cSh" secondAttribute="bottom" id="EdQ-tN-gAH"/>
+                            <constraint firstItem="aa3-O4-cSh" firstAttribute="leading" secondItem="KNm-KH-V7x" secondAttribute="leading" constant="6" id="TXp-8T-iMb"/>
+                            <constraint firstItem="aa3-O4-cSh" firstAttribute="top" secondItem="KNm-KH-V7x" secondAttribute="top" id="tyR-c8-8jT"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="KNm-KH-V7x" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2zf-ba-a4h"/>
+                <constraint firstAttribute="bottom" secondItem="KNm-KH-V7x" secondAttribute="bottom" id="CsG-kt-RQ4"/>
+                <constraint firstItem="KNm-KH-V7x" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="HSp-xD-tdW"/>
+                <constraint firstAttribute="trailing" secondItem="KNm-KH-V7x" secondAttribute="trailing" id="lOC-zg-B3b"/>
+            </constraints>
+            <size key="customSize" width="191" height="53"/>
+            <connections>
+                <outlet property="labelGeneros" destination="MyJ-j3-C85" id="Lhr-M2-WfP"/>
+            </connections>
+            <point key="canvasLocation" x="-316.66666666666669" y="74.665178571428569"/>
+        </collectionViewCell>
+    </objects>
+</document>
